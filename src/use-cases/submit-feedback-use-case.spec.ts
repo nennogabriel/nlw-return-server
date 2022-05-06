@@ -18,8 +18,8 @@ describe('Submit feedback', () => {
       })
     ).resolves.not.toThrow();
 
-    expect(createFeedbackSpy).toHaveBeenCalled();
-    expect(sendMailSpy).toHaveBeenCalled();
+    expect(await createFeedbackSpy).toHaveBeenCalled();
+    expect(await sendMailSpy).toHaveBeenCalled();
   });
 
   it('should not be able to submit a feedback without a type', async () => {
