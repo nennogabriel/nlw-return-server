@@ -1,0 +1,8 @@
+POST http://localhost:3333/feedbacks
+Content-Type: application/json
+
+{
+  "type": "BUG",    
+  "comment": "Tudo tudo bugado, bugadaço!!!",
+  "screenshot": "data:image/png;base64,aklsdjfhalksdjfh"
+}
